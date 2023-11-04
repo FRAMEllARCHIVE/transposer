@@ -25,7 +25,13 @@ top: 1%;
             font-size: 25vh;
             margin: 22px 0;
     opacity: 0.2;
+transition: opacity 3.3s;
+text-align: center;
         }
+
+    h1:hover {
+    opacity: 0.9;
+}
 
 textarea {
     position: fixed;
@@ -111,8 +117,15 @@ opacity: 0.4;
     </style>
 </head>
 <body>
-    <h1>♬</h1>
-    
+<div style="display: flex; justify-content: center;">
+    <h1>
+        <a href="https://pos.snapscan.io/qr/w1hRjQUu" target="_blank" style="text-align: center; color: #fff; text-decoration: none;">
+            ♬
+        </a>
+    </h1>
+</div>
+
+
     
     <textarea id="melody" placeholder=" ♫ ♪ ♬ " oninput="transposeMelody()"></textarea>
     <div class="arrow" id="decrement" onclick="decrementValue()"></div>
